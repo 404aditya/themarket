@@ -1,0 +1,19 @@
+*{
+    background-color: black;
+    color: white;
+}
+marquee{
+    color: rgb(123, 228, 125);
+    font-size: 100px;
+    font-family: magneto;
+    font-style: italic;
+}
+p{
+    margin: 100px;
+    font-size: larger;
+    text-align: center;
+}
+span{
+    color: chocolate;
+    font-style: italic;
+}

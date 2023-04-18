@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <script>
+        function msg() {
+            // var name = document.getElementById("name").value
+            var username = document.getElementById("username").value
+            alert("Login Sucessfully " + username);
+            // alert("hello ")
+        }
+    </script>
+    <form action="home2.html">
+        <h2>username</h2>
+        <input type="text" name="username" id="username" placeholder="CREATE USERNAME"><img src="icons8-user-30.png"
+            alt="" height="27px">
+        <h2>password</h2><input type="password" required placeholder="Password"><img src="lock.png" alt=""
+            height="27px">
+        <button type="submit" onclick="msg()">Login</button>
+        <p>Forget Your Password? <a href="">Click here</a></p>
+    </form>
+</body>
+
+</html>

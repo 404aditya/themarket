@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    min-height: 90vh;
+    background-color: #060c21;
+}
+
+form {
+    position: relative;
+    border: 5px solid white;
+    border-radius: 200px 0px;
+    padding: 5% 10%;
+    height: 25%;
+    margin: 5% 0;
+    margin-bottom: 0%;
+
+}
+
+input {
+    height: 30px;
+    width: 100%;
+    background: linear-gradient(315deg, #e91363, #5d20ff);
+    color: #ffff;
+    border: none;
+    outline: none;
+    position: relative;
+}
+
+img {
+    position: absolute;
+    right: 24%;
+}
+
+h2 {
+    color: white;
+    font-size: 30px;
+    text-transform: capitalize;
+    margin: 0px;
+}
+
+h2:hover {
+    color: #fff000;
+}
+
+button {
+    margin-top: 15px;
+    height: 30px;
+    width: 100%;
+    background: linear-gradient(315deg, #e91363, #5d20ff);
+    font-size: large;
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+p {
+    font-style: normal;
+    font-size: larger;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+p a {
+    color: #fff000;
+}
+
+a:hover {
+    text-decoration: none;
+}
+button:hover{
+    color: #fff000;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="singup.css">
+    <title>Document</title>
+</head>
+
+<body onload="registor()">
+
+    <script>
+        //Alert when page load
+        function registor() {
+            alert("Register Here")
+        }
+
+
+        //validation for the registration form
+        function validation() {
+            var password = document.getElementById("password").value
+            var passwordtstr = /(^[A-Za-z']{1,20}[0-9]{1,5})$/
+            if (!password.match(passwordtstr)) {
+                return false;
+            }
+            else {
+                document.getElementById("passError").innerHTML = ""
+            }
+
+
+            var password2 = document.getElementById("password2").value
+            if (!password2.match(password)) {
+                document.getElementById("passError2").innerHTML = "Enter correct password";
+                return false;
+            }
+            else {
+                document.getElementById("passError2").innerHTML = ""
+            }
+        }
+
+        function msg() {
+            var username = document.getElementById("username").value
+            alert("Login Sucessfully " + username);
+        }
+    </script>
+    <form action="home.html" onsubmit="return validation()">
+        <h2>username</h2>
+        <input type="text" name="username" id="username" placeholder="CREATE USERNAME" required><img src="icons8-user-30.png"
+            alt="" height="27px">
+        <h2>email</h2>
+        <input type="email" placeholder="EMAIL" required><span id="passError" class="error"></span><img src="mail.png"
+            alt="" height="27px">
+        <h2>password</h2><input type="text" name="password" id="password" required>
+        <h2>conform password</h2>
+        <input type="text" name="password2" id="password2" placeholder="CONFORM PASSWORD">
+        <span id="passError2" class="error"></span><br>
+        <button type="submit" onclick="msg()">sing up</button>
+        <button type="reset">Reset</button>
+    </form>
+</body>
+
+</html>
